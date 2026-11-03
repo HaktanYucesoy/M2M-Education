@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Smartup.M2M.Education.BuildingBlocks/Smartup.M2M.Education.BuildingBlocks.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+</Solution>
