@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Smartup.M2M.Api/Smartup.M2M.Api.csproj" Id="87aec5c6-41e9-4a6c-8095-53a8cfb66542" />
+    <Project Path="src/Smartup.M2M.BuildingBlocks/Smartup.M2M.BuildingBlocks.csproj" />
+    <Project Path="src/Smartup.M2M.Infrastructure/Smartup.M2M.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Education/">
+    <Project Path="src/Modules/Smartup.M2M.Education.Infrastructure/Smartup.M2M.Education.Infrastructure.csproj" Id="85d38d96-b729-4ccd-8e13-bec7213096a0" />
+    <Project Path="src/Modules/Smartup.M2M.Education.Module/Smartup.M2M.Education.Module.csproj" />
+  </Folder>
+</Solution>
