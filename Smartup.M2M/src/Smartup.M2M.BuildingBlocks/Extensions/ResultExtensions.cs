@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Smartup.M2M.Education.BuildingBlocks.Results;
+using Smartup.M2M.BuildingBlocks.Results;
 
 
-namespace Smartup.M2M.Education.BuildingBlocks.Extensions
+namespace Smartup.M2M.BuildingBlocks.Extensions
 {
     public static class ResultExtensions
     {

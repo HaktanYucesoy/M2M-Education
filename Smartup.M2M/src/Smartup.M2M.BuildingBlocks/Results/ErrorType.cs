@@ -1,6 +1,6 @@
 ﻿
 
-namespace Smartup.M2M.Education.BuildingBlocks.Results
+namespace Smartup.M2M.BuildingBlocks.Results
 {
     public enum ErrorType
     {

@@ -1,6 +1,6 @@
 ﻿
 
-namespace Smartup.M2M.Education.BuildingBlocks.Contracts.Pagination
+namespace Smartup.M2M.BuildingBlocks.Contracts.Pagination
 {
     public class PaginatedResponse<T>
     {

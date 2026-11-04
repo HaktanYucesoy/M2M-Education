@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Smartup.M2M.Education.BuildingBlocks.Security;
+using Smartup.M2M.BuildingBlocks.Security;
 
-namespace Smartup.M2M.Education.BuildingBlocks.Extensions
+namespace Smartup.M2M.BuildingBlocks.Extensions
 {
     public static class SecurityExtensions
     {

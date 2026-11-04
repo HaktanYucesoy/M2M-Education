@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Smartup.M2M.Education.BuildingBlocks.Exceptions
+namespace Smartup.M2M.BuildingBlocks.Exceptions
 {
     public class GlobalExceptionHandler : IExceptionHandler
     {

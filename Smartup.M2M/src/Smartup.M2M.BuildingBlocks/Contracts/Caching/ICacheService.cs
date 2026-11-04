@@ -1,6 +1,6 @@
 ﻿
 
-namespace Smartup.M2M.Education.BuildingBlocks.Contracts.Caching
+namespace Smartup.M2M.BuildingBlocks.Contracts.Caching
 {
     public interface ICacheService
     {

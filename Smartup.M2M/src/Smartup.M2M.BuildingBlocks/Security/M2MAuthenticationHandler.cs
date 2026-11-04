@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 
-namespace Smartup.M2M.Education.BuildingBlocks.Security
+namespace Smartup.M2M.BuildingBlocks.Security
 {
     public class M2MAuthenticationOptions : AuthenticationSchemeOptions
     {
@@ -41,6 +43,27 @@ namespace Smartup.M2M.Education.BuildingBlocks.Security
             var ticket = new AuthenticationTicket(principal, Scheme.Name);
 
             return Task.FromResult(AuthenticateResult.Success(ticket));
+        }
+
+        protected override async Task HandleChallengeAsync(AuthenticationProperties properties)
+        {
+            if (Response.HasStarted)
+            {
+                return;
+            }
+
+            Response.StatusCode = StatusCodes.Status401Unauthorized;
+            Response.ContentType = "application/json";
+
+            var problemDetails = new ProblemDetails
+            {
+                Status = StatusCodes.Status401Unauthorized,
+                Title = "Unauthorized Access",
+                Detail = "M2M authentication failed. Please ensure that valid 'X-Client-Id' and 'X-Client-Secret' headers are provided.",
+                Type = "https://tools.ietf.org/html/rfc7235#section-3.1"
+            };
+
+            await Response.WriteAsJsonAsync(problemDetails);
         }
     }
 }
